@@ -56,4 +56,24 @@ enabled = true
 [projects.'c:\users\suwan\desktop\coding stuff\own stuff\fluss']
 trust_level = "trusted"
 
+default_permissions = "workspace"
+
+[permissions.workspace.filesystem]
+":project_roots" = {
+  "."                     = "write",
+  "**/.env"               = "none",
+  "**/.env.*"             = "none",
+  "**/node_modules/**"    = "none",
+  "**/dist/**"            = "none",
+  "**/build/**"           = "none",
+  "**/.next/**"           = "none",
+  "**/coverage/**"        = "none",
+  "**/__pycache__/**"     = "none",
+  "**/*.log"              = "none",
+  "**/*.pb.go"            = "none",
+  "**/generated/**"       = "none",
+  "**/*.gen.go"           = "none"
+}
+glob_scan_max_depth = 4
+
 [windows]
