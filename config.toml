@@ -1,3 +1,5 @@
+default_permissions = "workspace"
+
 model_personality = "pragmatic"
 model = "gpt-5.5"
 model_reasoning_effort = "medium"
@@ -55,8 +57,6 @@ enabled = true
 
 [projects.'c:\users\suwan\desktop\coding stuff\own stuff\fluss']
 trust_level = "trusted"
-
-default_permissions = "workspace"
 
 [permissions.workspace.filesystem]
 ":project_roots" = {
