@@ -62,21 +62,22 @@ trust_level = "trusted"
 [projects.'c:\users\suwan\.codex']
 trust_level = "trusted"
 
-[permissions.workspace.filesystem.":project_roots"]
-"."                     = "write"
-"**/.env"               = "none"
-"**/.env.*"             = "none"
-"**/node_modules/**"    = "none"
-"**/dist/**"            = "none"
-"**/build/**"           = "none"
-"**/.next/**"           = "none"
-"**/coverage/**"        = "none"
-"**/__pycache__/**"     = "none"
-"**/*.log"              = "none"
-"**/*.pb.go"            = "none"
-"**/generated/**"       = "none"
-"**/*.gen.go"           = "none"
-
+[permissions.workspace.filesystem]
+":project_roots" = {
+  "."                     = "write",
+  "**/.env"               = "none",
+  "**/.env.*"             = "none",
+  "**/node_modules/**"    = "none",
+  "**/dist/**"            = "none",
+  "**/build/**"           = "none",
+  "**/.next/**"           = "none",
+  "**/coverage/**"        = "none",
+  "**/__pycache__/**"     = "none",
+  "**/*.log"              = "none",
+  "**/*.pb.go"            = "none",
+  "**/generated/**"       = "none",
+  "**/*.gen.go"           = "none"
+}
 glob_scan_max_depth = 4
 
 [windows]
