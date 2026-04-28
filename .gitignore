@@ -7,6 +7,7 @@ sandbox-secrets/
 .sandbox-secrets/
 .sandbox/
 .sandbox-bin/
+.env
 
 # Runtime State (auto-generated, large)
 *.sqlite
