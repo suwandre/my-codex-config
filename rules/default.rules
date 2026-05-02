@@ -135,3 +135,6 @@ prefix_rule(pattern=["C:\\Program Files\\PowerShell\\7\\pwsh.exe", "-Command", "
 prefix_rule(pattern=["C:\\Program Files\\PowerShell\\7\\pwsh.exe", "-Command", "git commit -m \"chore: update codex config\""], decision="allow")
 prefix_rule(pattern=["C:\\Program Files\\PowerShell\\7\\pwsh.exe", "-Command", "git commit -m \"TASK-031: add Carmen shopkeeper\""], decision="allow")
 prefix_rule(pattern=["C:\\Program Files\\PowerShell\\7\\pwsh.exe", "-Command", "git add rules/default.rules"], decision="allow")
+prefix_rule(pattern=["C:\\Program Files\\PowerShell\\7\\pwsh.exe", "-Command", "git add Assets/_Project/Scripts/Economy/ShippingBin.cs Assets/_Project/Scripts/Economy/ShippingBin.cs.meta Assets/_Project/Prefabs/Environment/ShippingBin.prefab Assets/_Project/Prefabs/Environment/ShippingBin.prefab.meta Assets/_Project/Scenes/FarmPrototype.unity TODO.md"], decision="allow")
+prefix_rule(pattern=["C:\\Program Files\\PowerShell\\7\\pwsh.exe", "-Command", "git commit -m \"TASK-032: implement shipping bin\""], decision="allow")
+prefix_rule(pattern=["C:\\Program Files\\PowerShell\\7\\pwsh.exe", "-Command", "git add config.toml rules/default.rules"], decision="allow")

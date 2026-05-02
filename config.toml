@@ -1,4 +1,5 @@
 default_permissions = "workspace"
+approval_policy = "never"
 project_doc_fallback_filenames = ["SOUL.md"]
 
 model_personality = "pragmatic"
