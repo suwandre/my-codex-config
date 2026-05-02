@@ -128,3 +128,7 @@ prefix_rule(pattern=["C:\\Program Files\\PowerShell\\7\\pwsh.exe", "-Command", "
 prefix_rule(pattern=["C:\\Program Files\\PowerShell\\7\\pwsh.exe", "-Command", "git commit -m \"TASK-029: create shop data model\""], decision="allow")
 prefix_rule(pattern=["C:\\Program Files\\PowerShell\\7\\pwsh.exe", "-Command", "git add Assets/_Project/Scenes/FarmPrototype.unity Assets/_Project/Scripts/Shops Assets/_Project/UI/ShopUI.prefab Assets/_Project/UI/ShopUI.prefab.meta TODO.md"], decision="allow")
 prefix_rule(pattern=["C:\\Program Files\\PowerShell\\7\\pwsh.exe", "-Command", "git commit -m \"TASK-030: create basic shop UI\""], decision="allow")
+prefix_rule(pattern=["C:\\Program Files\\PowerShell\\7\\pwsh.exe", "-Command", "git add Assets/_Project/Scripts/NPC/NPCController.cs Assets/_Project/Data/NPCs/NPC_Carmen.asset Assets/_Project/Data/NPCs/NPC_Carmen.asset.meta Assets/_Project/Data/Dialogue/Dialogue_Carmen_Greeting_001.asset Assets/_Project/Data/Dialogue/Dialogue_Carmen_Greeting_001.asset.meta Assets/_Project/Scenes/FarmPrototype.unity TODO.md"], decision="allow")
+prefix_rule(pattern=["C:\\Program Files\\PowerShell\\7\\pwsh.exe", "-Command", "git commit -m \"chore: update codex config\""], decision="allow")
+prefix_rule(pattern=["C:\\Program Files\\PowerShell\\7\\pwsh.exe", "-Command", "git commit -m \"TASK-031: add Carmen shopkeeper\""], decision="allow")
+prefix_rule(pattern=["C:\\Program Files\\PowerShell\\7\\pwsh.exe", "-Command", "git add rules/default.rules"], decision="allow")
