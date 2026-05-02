@@ -1,9 +1,9 @@
 default_permissions = "workspace"
-project_doc_fallback_filenames = ["SOUL.md", "AGENTS.md"]
+project_doc_fallback_filenames = ["SOUL.md"]
 
 model_personality = "pragmatic"
 model = "gpt-5.5"
-model_reasoning_effort = "medium"
+model_reasoning_effort = "high"
 [features]
 unified_exec = true
 shell_snapshot = true
@@ -25,12 +25,15 @@ args = ["-y", "@upstash/context7-mcp"]
 command = "npx"
 args = ["-y", "@modelcontextprotocol/server-sequential-thinking"]
 
+[mcp_servers.openaiDeveloperDocs]
+url = "https://developers.openai.com/mcp"
+
 [notice.model_migrations]
 "gpt-5.2-codex" = "gpt-5.3-codex"
 "gpt-5.3-codex" = "gpt-5.4"
 
 [tui]
-status_line = ["model-with-reasoning", "context-remaining", "five-hour-limit", "context-used"]
+status_line = ["model-with-reasoning", "five-hour-limit", "context-used", "used-tokens", "total-input-tokens", "total-output-tokens"]
 theme = "kanagawa"
 
 [tui.model_availability_nux]
@@ -39,10 +42,28 @@ theme = "kanagawa"
 [plugins."github@openai-curated"]
 enabled = true
 
+[plugins."browser-use@openai-bundled"]
+enabled = true
+
+[plugins."documents@openai-primary-runtime"]
+enabled = true
+
+[plugins."spreadsheets@openai-primary-runtime"]
+enabled = true
+
+[plugins."presentations@openai-primary-runtime"]
+enabled = true
+
 [projects.'c:\users\suwan\desktop\coding stuff\own stuff\fluss']
 trust_level = "trusted"
 
 [projects.'c:\users\suwan\.codex']
+trust_level = "trusted"
+
+[projects.'c:\users\suwan\desktop\coding stuff\own stuff\rooted-on-rhea']
+trust_level = "trusted"
+
+[projects.'c:\users\suwan\desktop\coding stuff\own stuff\codex-metrics']
 trust_level = "trusted"
 
 [permissions.workspace.filesystem]
@@ -65,3 +86,13 @@ glob_scan_max_depth = 4
 
 [windows]
 sandbox = "elevated"
+
+[marketplaces.openai-bundled]
+last_updated = "2026-04-28T22:15:48Z"
+source_type = "local"
+source = '\\?\C:\Users\suwan\.codex\.tmp\bundled-marketplaces\openai-bundled'
+
+[marketplaces.openai-primary-runtime]
+last_updated = "2026-04-28T22:16:24Z"
+source_type = "local"
+source = '\\?\C:\Users\suwan\.cache\codex-runtimes\codex-primary-runtime\plugins\openai-primary-runtime'

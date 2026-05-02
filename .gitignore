@@ -15,6 +15,10 @@ sandbox-secrets/
 *.sqlite-wal
 state_*.sqlite*
 logs_*.sqlite*
+sqlite/
+.codex-global-state.json
+.codex-global-state.json.bak
+session_index.jsonl
 
 # Session History & Logs
 history.jsonl
@@ -22,6 +26,7 @@ sandbox.log
 
 # Ephemeral / Cache / Runtime
 cache/
+vendor_imports/
 sessions/
 tmp/
 .tmp/
